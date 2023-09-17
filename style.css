@@ -9,20 +9,48 @@
 /* background-image: url(https://picsum.photos/1920/1080); */
 /* justify-content: center; */
 
+/* display: grid;
+    grid-template-areas: 
+        "topbar topbar topbar"
+        "buttons frame frame"
+        "footer footer footer";
+
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 500px auto 100px;
+    gap: 0 50px; */
+/* grid-area:"frame"; */
+
+/* Yukarıdakiler lazım olursa diye */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
 html {
+    scroll-behavior: smooth;
+}
+
+main {
     background-image: url(sweet_bonanza.jpg);
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 
-.top_text {
+header {
     font-size: 50px;
     color: white;
+    text-align: center;
+    margin-top: 40px;
+}
 
-    margin-left: 30%;
+.buttons {
+    /* background-color: aqua; */
 }
 
 .frame {
@@ -31,8 +59,10 @@ html {
     grid-template-columns: 150px 150px 150px 150px 150px 150px;
     grid-gap: 1em;
     text-align: center;
-
     background-color: rgb(256, 256, 256, 0.5);
+    background-image: url(background.png) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
     position: absolute;
     top: 50%;
@@ -46,10 +76,75 @@ html {
 }
 
 .item {
-    border-radius: 10px;
-    border: 5px solid black;
+   /*  border-radius: 10px;
+    border: 5px solid black; */
 }
 
-.cell2, .cell3 {
-    background-image: none;
+.cell13,
+.cell19,
+.cell25,
+.cell27 {
+    background-image: url(photos/appple.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cell1,
+.cell7,
+.cell26 {
+    background-image: url(photos/grape.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cell4,
+.cell5,
+.cell10,
+.cell11,
+.cell17,
+.cell23,
+.cell24 {
+    background-image: url(photos/melon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cell2,
+.cell6,
+.cell8,
+.cell15,
+.cell21,
+.cell30 {
+    background-image: url(photos/emerald.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cell3,
+.cell9,
+.cell16,
+.cell22,
+.cell28 {
+    background-image: url(photos/hearth.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cell14,
+.cell20,
+.cell29 {
+    background-image: url(photos/diamond.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.cell12,
+.cell18 {
+    background-image: url(photos/banana.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.infobar {
+    display: inline-flex;
 }
